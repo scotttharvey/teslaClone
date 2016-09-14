@@ -1,0 +1,27 @@
+body{
+  width: 100vw;
+  height: 100vh;
+}
+.home-background{
+  background-image: url("../images/teslaP100D.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+}
+.p100D-badge{
+  background-image: url("../images/p100Dbadge.svg");
+
+}
+
+
+/*Mobile View*/
+
+@media screen and (max-width: 720px) {
+  .home-background{
+    background-size: 200% 100%;
+    background-position-x: 50%;
+  }
+}
+
+}
