@@ -1,6 +1,6 @@
 angular.module("tesla").directive("navBar", function(){
   return {
-    templateUrl: '',
+    templateUrl: '../views/navBar-tmpl.html',
     restric: "EA",
     scope: {
 
