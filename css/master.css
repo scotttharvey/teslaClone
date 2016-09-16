@@ -1,7 +1,8 @@
 body{
   width: 100vw;
   height: 100vh;
-  /*background: black;*/
+  background: #f7f7f7;
+  overflow-x: hidden;
 }
 .nav-bar{
   width: 100vw;
@@ -74,9 +75,11 @@ body{
 }
 .home-background{
   background-image: url("../images/teslaP100D.png");
-  background-size: 100% 100%;
+  background-size:100%;
+  /*background-size: 100% 100%;*/
   background-repeat: no-repeat;
   height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -158,6 +161,63 @@ footer{
   white-space: nowrap;
 
 }
+.model-footer{
+  height: 8%;
+  width: 100vw;
+  background-color: rgba(44, 44, 44, 0.54);
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.model-footer-container{
+  width: 80%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.model-footer-name{
+  width: 15%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  color: black;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 22px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.model-footer-options{
+  width: 60%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;;
+
+}
+.model-footer-button{
+  height: 100%;
+  width: 20%;
+  border: none;
+  font-size: 12px;
+  font-family: 'Quicksand', sans-serif;
+  color: #eee;
+  background-color: #2F323A;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.color-red-button{
+  background: #B2271F;
+}
+.color-red-text{
+  font-family: 'Quicksand', sans-serif;
+  color: #B2271F;
+  overflow: hidden;
+  white-space: nowrap;
+}
 /*MODEL S*/
 .model-page{
   width: 100vw;
@@ -165,9 +225,10 @@ footer{
 }
 .model-s-background{
   width: 100%;
-  height: 100vh;
+  height: 92vh;
   background-image: url("../images/teslaModelSWhite.jpg");
-  background-size: 100% 115%;
+  background-size:100%;
+  background-position-y: 30%;
   background-repeat: no-repeat;
   display: flex;
   justify-content: flex-start;
@@ -200,7 +261,7 @@ white-space: nowrap;
   border-color: black;
   }
 .car-options{
-  width: 50%;
+  width: 55%;
   height: 60%;
   display: flex;
   align-items: center;
@@ -216,9 +277,9 @@ white-space: nowrap;
 
 .model-x-background{
   width: 100%;
-  height: 100vh;
-  background-image: url("../images/teslaModelXWhite.jpg");
-  background-size: 100% 115%;
+  height: 92vh;
+  background-image: url("../images/modelXside.jpg");
+  background-size:100%;
   background-repeat: no-repeat;
   display: flex;
   justify-content: flex-start;
