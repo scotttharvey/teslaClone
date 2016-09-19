@@ -1,309 +1,340 @@
-body{
-  width: 100vw;
-  height: 100vh;
-  background: #f7f7f7;
-  overflow-x: hidden;
-}
-.nav-bar{
-  width: 100vw;
-  height: 8vh;
-  background-color: rgba(44, 44, 44, 0.34);
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.nav-body{
-  width: 80%;
-  height: 50%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #f7f7f7;
+    overflow-x: hidden;
 }
 
-.tesla-logo{
-  background-image: url("../images/teslaLogo.png");
-  background-size: 100% 100%;
-  width: 15%;
-  height: 40%;
-  cursor: pointer;
+.nav-bar {
+    width: 100vw;
+    height: 8vh;
+    background-color: rgba(44, 44, 44, 0.34);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.nav-body {
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-.left-nav{
-  width: 45%;
-  height: 40%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-left: 20px;
-}
-.nav-bold{
-  width:20%;
-  height: 100%;
-  color: #eee;
-  font-size: 15px;
-  font-family: 'Quicksand', sans-serif;
-  overflow: hidden;
-  white-space: nowrap;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  cursor: pointer;
-}
-.right-nav{
-  width: 40%;
-  height: 40%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-left: 50px;
 
+.tesla-logo {
+    background-image: url("../images/teslaLogo.png");
+    background-size: 100% 100%;
+    width: 15%;
+    height: 40%;
+    cursor: pointer;
 }
-.nav-light{
-  width:20%;
-  height: 100%;
-  color: #eee;
-  font-size: 11px;
-  font-family: 'Quicksand', sans-serif;
-  white-space: nowrap;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  cursor: pointer;
 
+.left-nav {
+    width: 45%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 20px;
 }
-.home-background{
-  background-image: url("../images/teslaP100D.png");
-  background-size:100%;
-  /*background-size: 100% 100%;*/
-  background-repeat: no-repeat;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  flex-direction: column;
-}
-.home-main-info{
-  width: 100%;
-  height: 40%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
-}
-.p100D-badge{
-  background-image: url("../images/p100Dbadge.svg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  width: 35%;
-  height: 55px;
-}
-.med-text{
-  color: #eee;
-  font-size: 25px;
-  font-family: 'Quicksand', sans-serif;
-}
-.small-text{
-  color: #eee;
-  font-size: 20px;
-  margin-bottom: 50px;
-  font-family: 'Quicksand', sans-serif;
-}
-.mobile-order-buttons{
-  width: 50%;
-  height:45px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-bottom: 100px;
-}
-.button-option{
-  height: 90%;
-  width: 30%;
-  background-color: rgba(44, 44, 44, 0.24);
-  border: none;
-}
-.button-font{
-  width: auto;
-  color: #eee;
-  font-size: 15px;
-  font-family: 'Quicksand', sans-serif;
-  overflow: hidden;
-  white-space: nowrap;
 
+.nav-bold {
+    width: 20%;
+    height: 100%;
+    color: #eee;
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
 }
-footer{
-  width: 100%;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.footer-section{
-  width: 60%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.footer-link{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 10%;
-  height: 100%;
-  font-size: 11px;
-  color: #eee;
-  font-family: 'Quicksand', sans-serif;
-  overflow: hidden;
-  white-space: nowrap;
 
+.right-nav {
+    width: 40%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 50px;
 }
-.model-footer{
-  height: 8%;
-  width: 100vw;
-  background-color: rgba(44, 44, 44, 0.54);
-  position: fixed;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.model-footer-container{
-  width: 80%;
-  height: 60%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 
+.nav-light {
+    width: 20%;
+    height: 100%;
+    color: #eee;
+    font-size: 11px;
+    font-family: 'Quicksand', sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
 }
-.model-footer-name{
-  width: 15%;
-  height: 90%;
-  display: flex;
-  align-items: center;
-  color: black;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 22px;
-  overflow: hidden;
-  white-space: nowrap;
-}
-.model-footer-options{
-  width: 60%;
-  height: 90%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;;
 
+.home-background {
+    background-image: url("../images/teslaP100D.png");
+    background-size: 100%;
+    /*background-size: 100% 100%;*/
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
 }
-.model-footer-button{
-  height: 100%;
-  width: 20%;
-  border: none;
-  font-size: 12px;
-  font-family: 'Quicksand', sans-serif;
-  color: #eee;
-  background-color: #2F323A;
-  overflow: hidden;
-  white-space: nowrap;
+
+.home-main-info {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
 }
-.color-red-button{
-  background: #B2271F;
+
+.p100D-badge {
+    background-image: url("../images/p100Dbadge.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 35%;
+    height: 55px;
 }
-.color-red-text{
-  font-family: 'Quicksand', sans-serif;
-  color: #B2271F;
-  overflow: hidden;
-  white-space: nowrap;
+
+.med-text {
+    color: #eee;
+    font-size: 25px;
+    font-family: 'Quicksand', sans-serif;
 }
+
+.small-text {
+    color: #eee;
+    font-size: 20px;
+    margin-bottom: 50px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.mobile-order-buttons {
+    width: 50%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.button-option {
+    height: 90%;
+    width: 30%;
+    background-color: rgba(44, 44, 44, 0.24);
+    border: none;
+}
+
+.button-font {
+    width: auto;
+    color: #eee;
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+footer {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-section {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 10%;
+    height: 100%;
+    font-size: 11px;
+    color: #eee;
+    font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.model-footer {
+    height: 8%;
+    width: 100vw;
+    background-color: rgba(44, 44, 44, 0.54);
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.model-footer-container {
+    width: 80%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.model-footer-name {
+    width: 15%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 22px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.model-footer-options {
+    width: 60%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.model-footer-button {
+    height: 100%;
+    width: 20%;
+    border: none;
+    font-size: 12px;
+    font-family: 'Quicksand', sans-serif;
+    color: #eee;
+    background-color: #2F323A;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.color-red-button {
+    background: #B2271F;
+}
+
+.color-red-text {
+    font-family: 'Quicksand', sans-serif;
+    color: #B2271F;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
 /*MODEL S*/
-.model-page{
-  width: 100vw;
-  height:auto;
-}
-.model-s-background{
-  width: 100%;
-  height: 92vh;
-  background-image: url("../images/teslaModelSWhite.jpg");
-  background-size:100%;
-  background-position-y: 30%;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 90px;
-}
-.title-options{
-  width: 80%;
-  height: 10%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #eee;
 
+.model-page {
+    width: 100vw;
+    height: auto;
 }
-.car-title{
-width: 25%;
-height: 80%;
-display: flex;
-align-items: center;
-color: #eee;
-font-size: 40px;
-font-family: 'Quicksand', sans-serif;
-overflow: hidden;
-white-space: nowrap;
-}
-.x{
-  color: black;
-  border-color: black;
-  }
-.car-options{
-  width: 55%;
-  height: 60%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  color: #eee;
-  font-size: 15px;
-  font-family: 'Quicksand', sans-serif;
-  overflow: hidden;
-  white-space: nowrap;
 
+.model-s-background {
+    width: 100%;
+    height: 92vh;
+    background-image: url("../images/teslaModelSWhite.jpg");
+    background-size: 100%;
+    background-position-y: 30%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 90px;
 }
+
+.title-options {
+    width: 80%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+
+.car-title {
+    width: 25%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    color: #eee;
+    font-size: 40px;
+    font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.x {
+    color: black;
+    border-color: black;
+}
+
+.car-options {
+    width: 55%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #eee;
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
 /*MODEL X*/
 
-.model-x-background{
-  width: 100%;
-  height: 92vh;
-  background-image: url("../images/modelXside.jpg");
-  background-size:100%;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 90px;
+.model-x-background {
+    width: 100%;
+    height: 92vh;
+    background-image: url("../images/modelXside.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 90px;
 }
+
+
 /*MODEL 3*/
-.model3-top-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.model3-top-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 video {
-  position: fixed;
-  top: 35%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 70%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  transform: translate(-50%, -50%);
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 70%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translate(-50%, -50%);
 }
+
 .model3-logo {
     width: 100%;
     height: 90px;
@@ -314,18 +345,22 @@ video {
     align-items: center;
     justify-content: center;
 }
-.model3-title{
-  font-size: 60px;
-  font-family: 'Quicksand', sans-serif;
-  color: #eee;
+
+.model3-title {
+    font-size: 60px;
+    font-family: 'Quicksand', sans-serif;
+    color: #eee;
 }
+
+
 /*Mobile View*/
 
 @media screen and (max-width: 720px) {
-  .home-background{
-    background-size: 200% 100%;
-    background-position-x: 50%;
-  }
+    .home-background {
+        background-size: 200% 100%;
+        background-position-x: 50%;
+    }
 }
+
 
 }
