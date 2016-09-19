@@ -79,8 +79,8 @@ body {
 
 .home-background {
     background-image: url("../images/teslaP100D.png");
-    background-size: 100%;
-    /*background-size: 100% 100%;*/
+    /*background-size: 100%;*/
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
@@ -211,7 +211,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
 }
 
 .model-footer-button {
@@ -242,15 +242,18 @@ footer {
 
 .model-page {
     width: 100vw;
-    height: auto;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .model-s-background {
     width: 100%;
     height: 92vh;
     background-image: url("../images/teslaModelSWhite.jpg");
-    background-size: 100%;
-    background-position-y: 30%;
+    /*background-size: 100%;*/
+    background-size: 100% 125%;
+    background-position-x: 45%;
     background-repeat: no-repeat;
     display: flex;
     justify-content: flex-start;
@@ -305,7 +308,8 @@ footer {
     width: 100%;
     height: 92vh;
     background-image: url("../images/modelXside.jpg");
-    background-size: 100%;
+    background-size: 100% 125%;
+    background-position-x: 45%;
     background-repeat: no-repeat;
     display: flex;
     justify-content: flex-start;
@@ -355,12 +359,138 @@ video {
 
 /*Mobile View*/
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
+  /*nav*/
+    .nav-bar{
+      background-color: rgba(44, 44, 44, 0.84);
+    }
+    .nav-body{
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .tesla-logo{
+      background-size: 100% 100%;
+      width: 40%;
+      height: 65%
+    }
+    .hamburger-menu{
+      background-image: url("../images/hamburger-icon.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 7%;
+      height: 85%;
+    }
+    .left-nav{
+      display: none;
+    }
+    .right-nav{
+      display: none;
+    }
+
     .home-background {
-        background-size: 200% 100%;
+        max-width: 100%;
+        height: 100vh;
+        background-size: cover;
         background-position-x: 50%;
     }
+    .home-main-info {
+        height: 48%;
+    }
+    .p100D-badge {
+        background-image: url("../images/p100Dbadge.svg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 80%;
+        height: 150%;
+        margin-bottom: 10px;
+    }
+    .med-text {
+        color: #eee;
+        font-size: 20px;
+        font-family: 'Quicksand', sans-serif;
+    }
+    .small-text {
+        color: #eee;
+        font-size: 13px;
+        margin-bottom: 50px;
+        font-family: 'Quicksand', sans-serif;
+    }
+    .max-text{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+    }
+
+    .mobile-order-buttons {
+        width: 90%;
+        height: 500%;
+        margin-bottom: 13px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .button-option {
+        height: 25%;
+        width: 100%;
+        background-color: rgba(44, 44, 44, 0.54);
+        border: none;
+    }
+
+    .button-font {
+        width: auto;
+        color: #eee;
+        font-size: 12px;
+        font-family: 'Quicksand', sans-serif;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    footer{
+      display: none;
+    }
+    .footer-section {
+        display: none;
+    }
+/*MODEL MOBILE*/
+.model-s-background {
+    background-size: contain;
+    margin-top: 8vh;
+    padding-top: 0;
+}
+.model-x-background {
+    background-size: contain;
+    margin-top: 60px;
+    padding-top: 0;
+}
+.title-options {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eee;
+    padding: 20px;
 }
 
+.car-title {
+    width: 25%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 22px;
+    font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.car-options span{
+  display: none;
+}
+.show-mobile {
 
+}
 }
