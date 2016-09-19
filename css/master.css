@@ -226,8 +226,8 @@ footer {
     white-space: nowrap;
 }
 
-.color-red-button {
-    background: #B2271F;
+#color-red-button {
+    background-color: #B2271F;
 }
 
 .color-red-text {
@@ -269,6 +269,9 @@ footer {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #eee;
+}
+.car-options-mobile {
+display: none;
 }
 
 .car-title {
@@ -356,7 +359,14 @@ video {
     color: #eee;
 }
 
-
+@media screen and (max-width: 1320px) {
+  .color-red-text{
+    display: none;
+  }
+  .model-footer-button{
+    width: 30%;
+  }
+}
 /*Mobile View*/
 
 @media screen and (max-width: 768px) {
@@ -463,7 +473,7 @@ video {
 }
 .model-x-background {
     background-size: contain;
-    margin-top: 60px;
+    margin-top: 8vh;
     padding-top: 0;
 }
 .title-options {
@@ -473,7 +483,8 @@ video {
     justify-content: space-between;
     align-items: center;
     background: #eee;
-    padding: 20px;
+    padding: 0 20px 0 20px;
+
 }
 
 .car-title {
@@ -487,10 +498,32 @@ video {
     overflow: hidden;
     white-space: nowrap;
 }
-.car-options span{
+.car-options{
   display: none;
 }
-.show-mobile {
+.car-options-mobile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 65%;
+  height: 55%;
 
 }
+.car-options-mobile span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  color: #eee;
+  background-color: rgba(44, 44, 44, 0.74);
+
+  font-size: 12px;
+  font-family: 'Quicksand', sans-serif;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.model-footer{
+  display: none;
+}
+
 }
