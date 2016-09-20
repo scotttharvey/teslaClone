@@ -79,8 +79,8 @@ body {
 
 .home-background {
     background-image: url("../images/teslaP100D.png");
-    /*background-size: 100%;*/
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
@@ -88,6 +88,7 @@ body {
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
+
 }
 
 .home-main-info {
@@ -177,7 +178,7 @@ footer {
 .model-footer {
     height: 8%;
     width: 100vw;
-    background-color: rgba(44, 44, 44, 0.54);
+    background-color: rgba(44, 44, 44, 0.99);
     position: fixed;
     bottom: 0;
     display: flex;
@@ -236,15 +237,78 @@ footer {
     overflow: hidden;
     white-space: nowrap;
 }
+.section-container{
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.container{
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 1px solid #999;
+}
+.container h1{
+  height: 60px;
+  width: 620px;
+  color: #000;
+  font-size: 37px;
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.container p{
+  height: auto;
+  width: 100%;
+  color: #000;
+  font-size: 14px;
+  font-family: 'Quicksand', sans-serif;
 
+  margin-bottom: 20px;
+}
+.container .description{
+  height: auto;
+  width: 620px;
+  color: #000;
+  font-size: 14px;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 20px;
 
+}
+
+.section-features{
+  width: 90%;
+  height: 400px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.feature-headlight{
+  width: 420px;
+  height: 300px;
+}
+.feature-polution-free{
+  width: 420px;
+  height: 350px;
+}
 /*MODEL S*/
 
-.model-page {
+.model-s-page {
     width: 100vw;
     height: 100%;
     display: flex;
     justify-content: flex-start;
+    flex-direction: column;
 }
 
 .model-s-background {
@@ -504,12 +568,14 @@ video {
     }
 /*MODEL MOBILE*/
 .model-s-background {
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     margin-top: 8vh;
     padding-top: 0;
 }
 .model-x-background {
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     margin-top: 8vh;
     padding-top: 0;
 }
@@ -562,5 +628,77 @@ video {
 .model-footer{
   display: none;
 }
+.section-container{
+  height: 900px;
+}
+.container{
+  width: 90%;
+  height: 900px;
+  justify-content: flex-start;
+}
+.container h1 {
+    height: auto;
+    width: 100%;
+    color: #000;
+    font-size: 30px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+.container p{
+  height: auto;
+  width: 100%;
+  color: #000;
+  font-size: 16px;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 20px;
 
+}
+.container .description{
+  height: auto;
+  width: 100%;
+  color: #000;
+  font-size: 16px;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 20px;
+
+}
+.section-features{
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+}
+.feature{
+  width: 100%;
+  margin-bottom: 20px;
+
+}
+.feature h4{
+  width: 100%;
+  display: flex;
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: 'Quicksand', sans-serif;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+.feature p{
+  width: 100%;
+
+}
+.feature-polution-free{
+  width: 100%;
+
+}
+.feature-img{
+  width: 100%;
+  height: 190px;
+  background: #aca;
+}
 }
