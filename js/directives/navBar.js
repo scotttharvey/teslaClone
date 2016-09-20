@@ -12,5 +12,9 @@ angular.module("tesla").directive("navBar", function(){
 
     }
 
-  }
-})
+  };
+});
+
+
+var event = new Event('lastJsLoaded');
+document.dispatchEvent(event);
