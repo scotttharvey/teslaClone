@@ -310,9 +310,10 @@ display: none;
 .model-x-background {
     width: 100%;
     height: 92vh;
-    background-image: url("../images/modelXside.jpg");
+    background-image: url("../images/modelXSunset.jpg");
     background-size: 100% 125%;
     background-position-x: 45%;
+    background-position-y: 45%;
     background-repeat: no-repeat;
     display: flex;
     justify-content: flex-start;
@@ -365,6 +366,12 @@ video {
   }
   .model-footer-button{
     width: 30%;
+  }
+  .right-nav{
+    display: none;
+  }
+  .left-nav{
+    width: 90%;
   }
 }
 /*Mobile View*/
