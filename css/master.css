@@ -92,7 +92,7 @@ body {
 
 .home-main-info {
     width: 100%;
-    height: 40%;
+    height: 350px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -101,9 +101,9 @@ body {
 
 .p100D-badge {
     background-image: url("../images/p100Dbadge.svg");
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    width: 35%;
+    width: 360px;
     height: 55px;
 }
 
@@ -121,7 +121,7 @@ body {
 }
 
 .mobile-order-buttons {
-    width: 50%;
+    width: 500px;
     height: 45px;
     display: flex;
     align-items: center;
@@ -165,7 +165,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 10%;
+    width: 100px;
     height: 100%;
     font-size: 11px;
     color: #eee;
@@ -251,8 +251,8 @@ footer {
     width: 100%;
     height: 92vh;
     background-image: url("../images/teslaNight.jpg");
-    /*background-size: 100%;*/
-    background-size: 100% 125%;
+    background-size: cover;
+    background-position: center;
     background-position-x: 45%;
     background-repeat: no-repeat;
     display: flex;
@@ -307,13 +307,40 @@ display: none;
 
 /*MODEL X*/
 
+/*s
+a couple other things. you need to make sure to not use vh.
+and % as much like your logo and stuff gets streched out
+its ok to give it a solid px number
+also you need to make the hard page
+that would be the most impressive if you made the
+specs page or whatever it is.
+that would go a long way and wouldnt be that hard make sure that
+you start in mobile view for one of those ones tho
+it would be sweet.
+other than that it looks good.
+but ya background:cover and background-size:centerl helps
+position the background image like you want it.
+good luck
+gtg
+xolXvoerx oxotxou
+i though percentages made it relative to the screen size
+yea but like on the Tesla logo you want that to have a fix width
+like a solid number not something that is available to change.
+ok thx yeps  yiep
+got la ove you mi
+mega minion didd you get one ?
+yea how is it ?
+idk just opopend
+oh nice
+i played eric or whatever and beat him
+nice he is goot
+ wa*/
 .model-x-background {
     width: 100%;
     height: 92vh;
     background-image: url("../images/modelXSunset.jpg");
-    background-size: 100% 125%;
-    background-position-x: 45%;
-    background-position-y: 45%;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     display: flex;
     justify-content: flex-start;
@@ -373,6 +400,9 @@ video {
   .left-nav{
     width: 90%;
   }
+  .footer-section {
+    width: 90%;
+  }
 }
 /*Mobile View*/
 
@@ -418,8 +448,8 @@ video {
         background-image: url("../images/p100Dbadge.svg");
         background-size: 100% 100%;
         background-repeat: no-repeat;
-        width: 80%;
-        height: 150%;
+        width: 500px;
+        height: 550px;
         margin-bottom: 10px;
     }
     .med-text {
