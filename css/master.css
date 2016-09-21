@@ -26,8 +26,8 @@ body {
 .tesla-logo {
     background-image: url("../images/teslaLogo.png");
     background-size: 100% 100%;
-    width: 15%;
-    height: 40%;
+    width: 155px;
+    height: 25px;
     cursor: pointer;
 }
 
@@ -178,7 +178,7 @@ footer {
 .model-footer {
     height: 8%;
     width: 100vw;
-    background-color: rgba(44, 44, 44, 0.99);
+    background-color: rgba(55, 56, 63, 1);
     position: fixed;
     bottom: 0;
     display: flex;
@@ -233,13 +233,18 @@ footer {
 
 .color-red-text {
     font-family: 'Quicksand', sans-serif;
+
+    font-size: 17px;
     color: #B2271F;
     overflow: hidden;
     white-space: nowrap;
 }
+.page{
+  margin-bottom: 70px;
+}
 .section-container{
   width: 100%;
-  height: 700px;
+  height: 615px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -268,7 +273,7 @@ footer {
 .container p{
   height: auto;
   width: 100%;
-  color: #000;
+  color: #2E3138;
   font-size: 14px;
   font-family: 'Quicksand', sans-serif;
 
@@ -277,12 +282,12 @@ footer {
 .container .description{
   height: auto;
   width: 620px;
-  color: #000;
+  color: #2E3138;
   font-size: 14px;
   font-family: 'Quicksand', sans-serif;
   text-align: center;
   vertical-align: middle;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 
 }
 
@@ -295,7 +300,7 @@ footer {
 }
 .feature-headlight{
   width: 420px;
-  height: 300px;
+  height: 310px;
 }
 .feature-polution-free{
   width: 420px;
@@ -322,6 +327,18 @@ footer {
   font-family: 'Quicksand', sans-serif;
   font-weight: bolder;
   margin-bottom: 5px;
+}
+.auto-pilot-section{
+  border-top: 1px solid #2E3138;
+}
+.auto-display{
+  width: 100vw;
+  height: 800px;
+  background-image: url("../images/autoPilot.png");
+  background-color: black;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 /*MODEL S*/
 
@@ -378,7 +395,7 @@ display: none;
 }
 
 .car-options {
-    width: 55%;
+    width: 685px;
     height: 60%;
     display: flex;
     align-items: center;
@@ -489,30 +506,38 @@ video {
   .footer-section {
     width: 90%;
   }
+  .car-options{
+    width: 70%;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
+  }
 }
 /*Mobile View*/
 
 @media screen and (max-width: 768px) {
   /*nav*/
     .nav-bar{
-      background-color: rgba(44, 44, 44, 0.84);
+      position: fixed;
+      background-color: rgba(44, 44, 44, 0.96);
     }
     .nav-body{
       width: 90%;
       display: flex;
       justify-content: space-between;
     }
-    .tesla-logo{
-      background-size: 100% 100%;
-      width: 40%;
-      height: 65%
-    }
+      .tesla-logo {
+          background-size: 100% 100%;
+          width: 150px;
+          height: 21px;
+      }
+
     .hamburger-menu{
       background-image: url("../images/hamburger-icon.png");
       background-size: contain;
       background-repeat: no-repeat;
-      width: 7%;
-      height: 85%;
+      width: 40px;
+      height: 25px;
     }
     .left-nav{
       display: none;
@@ -589,6 +614,9 @@ video {
         display: none;
     }
 /*MODEL MOBILE*/
+.page{
+  margin-bottom: 0;
+}
 .model-s-background {
     background-size: cover;
     background-position: center;
@@ -651,7 +679,7 @@ video {
   display: none;
 }
 .section-container{
-  height: 900px;
+  height: 955px;
 }
 .container{
   width: 90%;
@@ -722,5 +750,8 @@ video {
   width: 100%;
   height: 190px;
   margin-bottom: 10px;
+}
+.auto-display{
+  height: 300px;
 }
 }
