@@ -246,13 +246,12 @@ footer {
   flex-direction: column;
 }
 .container{
-  width: 70%;
-  height: 100%;
+  width: 1045px;
+  height: 615px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  border-bottom: 1px solid #999;
 }
 .container h1{
   height: 60px;
@@ -263,6 +262,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 .container p{
@@ -287,7 +287,7 @@ footer {
 }
 
 .section-features{
-  width: 90%;
+  width: 100%;
   height: 400px;
   margin-bottom: 20px;
   display: flex;
@@ -300,6 +300,28 @@ footer {
 .feature-polution-free{
   width: 420px;
   height: 350px;
+}
+.feature-img{
+  width: 100%;
+  height: 190px;
+
+}
+#lights{
+  background-image: url("../images/adaptiveLights.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#bio{
+  background-image: url("../images/bioMode.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.feature h4{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bolder;
+  margin-bottom: 5px;
 }
 /*MODEL S*/
 
@@ -699,6 +721,6 @@ video {
 .feature-img{
   width: 100%;
   height: 190px;
-  background: #aca;
+  margin-bottom: 10px;
 }
 }
